@@ -6,4 +6,4 @@ class SolCard extends Component {
   }
 }
 
-module.exports = SolCard;
+export default SolCard;
