@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import SolCard from './SolCard';
+
 class Weather extends Component {
   constructor() {
     super()
@@ -30,7 +32,7 @@ class Weather extends Component {
     } else {
       return (
         <div>
-          {solKeys.map(sol => <div key={sol}>Sol {sol} : {apiData[sol].AT.av}°C</div>)}
+          {solKeys.map(sol => <SolCard key={sol} solNum={sol} data={apiData[sol]}/>)}
         </div>
       );
     }
