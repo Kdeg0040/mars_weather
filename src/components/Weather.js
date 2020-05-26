@@ -5,43 +5,32 @@ class Weather extends Component {
     super()
 
     this.state = {
-      error: null,
-      isLoaded: false,
-      weatherData: {}
+      apiData: {}
     };
   }
 
   componentDidMount() {
     const nasaAPI = 'https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0'
-    fetch(nasaAPI)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            weatherData: result
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
-          })
-        }
-      )
+    this.getWeatherData(nasaAPI);
+  }
+
+  getWeatherData = async (url) => {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    this.setState({ apiData: data })
   }
 
   render() {
-    const { error, isLoaded, weatherData } = this.state;
-    const solKeys = weatherData.sol_keys
-    if (error) {
-      return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
-      return <div>Loading...</div>;
+    const { apiData } = this.state;
+    const solKeys = apiData.sol_keys
+
+    if (solKeys === undefined) {
+      return <div>Loading...</div>
     } else {
       return (
         <div>
-          {solKeys.map(sol => <div key={sol}>Sol {sol} : {weatherData[sol].AT.av}°C</div>)}
+          {solKeys.map(sol => <div key={sol}>Sol {sol} : {apiData[sol].AT.av}°C</div>)}
         </div>
       );
     }
