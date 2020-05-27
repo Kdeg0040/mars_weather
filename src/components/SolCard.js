@@ -9,7 +9,9 @@ class SolCard extends Component {
 
     return (
       <div className="column">
-        Sol {sol}: {avTemp}°C
+        <div className="box">
+          Sol {sol}: {avTemp}°C
+        </div>      
       </div>
     )
   }
