@@ -4,7 +4,7 @@ import Weather from './components/Weather';
 
 function App() {
   return (
-    <div className="hero is-fullheight ">
+    <div className="hero is-fullheight">
       <Weather />
     </div>
   );
