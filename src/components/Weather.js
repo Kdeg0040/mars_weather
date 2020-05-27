@@ -31,7 +31,7 @@ class Weather extends Component {
       return <div>Loading...</div>
     } else {
       return (
-        <div>
+        <div className="columns">
           {solKeys.map(sol => <SolCard key={sol} solNum={sol} data={apiData[sol]}/>)}
         </div>
       );

@@ -8,7 +8,7 @@ class SolCard extends Component {
     const mxTemp = Math.round(this.props.data.AT.mx);
 
     return (
-      <div>
+      <div className="column">
         Sol {sol}: {avTemp}°C
       </div>
     )
