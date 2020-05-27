@@ -9,9 +9,11 @@ class SolCard extends Component {
 
     return (
       <div className="column">
-        <div className="box has-text-centered">
+        <div className="box">
           <h1 className="title is-4">Sol {sol} </h1>
-          <h1 className="title is-2">{avTemp}°C</h1>
+          <h1 className="title is-2 has-text-centered">{avTemp}°C</h1>
+          <p>min: {mnTemp}°C</p>
+          <p>max: {mxTemp}°C</p>
         </div>      
       </div>
     )
