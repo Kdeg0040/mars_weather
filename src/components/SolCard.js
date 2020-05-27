@@ -11,7 +11,7 @@ class SolCard extends Component {
 
     return (
       <div className="column">
-        <div className="box">
+        <div className="box has-background-warning">
           <h1 className="title is-4">Sol {sol} </h1>
           <h1 className="subtitle is-6">{earthDate}</h1>
           <p></p>
