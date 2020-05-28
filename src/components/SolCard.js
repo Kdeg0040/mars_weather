@@ -16,8 +16,8 @@ class SolCard extends Component {
           <h1 className="subtitle is-6">{earthDate}</h1>
           <p></p>
           <h1 className="title is-2 has-text-centered">{avTemp}°C</h1>
-          <p>min: {mnTemp}°C</p>
-          <p>max: {mxTemp}°C</p>
+          <p>high: {mxTemp}°C</p>
+          <p>low: {mnTemp}°C</p>
         </div>      
       </div>
     )
