@@ -6,6 +6,7 @@
 .pnp.js
 /public/styles/main.css
 /public/styles/main.css.map
+.sass-cache
 
 # testing
 /coverage
