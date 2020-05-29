@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
-    "postinstall": "grunt sass:production"
+    "postinstall": "grunt sass:production --force"
   },
   "eslintConfig": {
     "extends": "react-app"
