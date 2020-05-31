@@ -5,6 +5,8 @@
 
 A 7 Sol(Martian day) weather report for Mars powered by the Mars Weather Service API provided by NASA.
 
+<img width="1440" alt="Screenshot 2020-05-31 14 59 02" src="https://user-images.githubusercontent.com/51591680/83354264-5dd1dd00-a34f-11ea-9e94-106806ff6712.png">
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -38,7 +40,7 @@ $ bundle install
 $ npm install
 ```
 
-### Installing
+### Launch Application
 
 To start the local development server and open the app in your browser, use:
 
