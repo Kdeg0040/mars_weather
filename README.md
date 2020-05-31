@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Kdeg0040/mars_weather.svg?branch=master)](https://travis-ci.org/Kdeg0040/mars_weather)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5974298ebf6068521947/maintainability)](https://codeclimate.com/github/Kdeg0040/mars_weather/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5974298ebf6068521947/test_coverage)](https://codeclimate.com/github/Kdeg0040/mars_weather/test_coverage)
 
 A 7 Sol(Martian day) weather report for Mars powered by the Mars Weather Service API provided by NASA.
 
